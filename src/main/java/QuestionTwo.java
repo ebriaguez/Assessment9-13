@@ -8,11 +8,9 @@ public class QuestionTwo {
         alphabet[0] = '$'; //replacing letter
         System.out.println(alphabet[0]); //checking to see if array updated
         //loop through to print every letter in array except letter y
-        public String returningAlphabet(){
-
-        }
         for(int indexPosition = 0; indexPosition < alphabet.length; indexPosition++){
-            if (alphabet[indexPosition] ){
+            //created an IF statement loop through and print every element except 'Y
+            if(alphabet[indexPosition] != 'Y'){
                 System.out.println(alphabet[indexPosition]);
             }
         }

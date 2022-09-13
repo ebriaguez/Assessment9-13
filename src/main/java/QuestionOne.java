@@ -32,4 +32,15 @@ Total: $35.0
 
 
  */
+
+    public static void main(String[] args) {
+        //declaring my variables
+        String product;
+        int qty;
+        double price;
+        int miles;
+        double total;
+
+
+    }
 }
