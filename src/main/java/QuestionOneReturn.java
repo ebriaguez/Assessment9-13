@@ -21,16 +21,24 @@ public class QuestionOneReturn {
 
     public double totalPrice(){
         int startMile = 0;
-        for(int x = startMile; startMile <= 50; startMile++){
-            if(startMile > 0 && startMile <= 4){
+        for(int x = this.miles; x <= 50; x++){
+            if(x > 0 && x <= 4){
                 return (this.qty * this.price) + 2;
-            } else if (startMile >= 5 && startMile <= 15){
+            }
+
+            if (x >= 5 && x <= 15){
                 return (this.qty * this.price) + 5;
-            } else if (startMile >= 16 && startMile <= 25){
+            }
+
+            if (x >= 16 && x <= 25){
                 return (this.qty * this.price) + 10;
-            } else if (startMile >= 26 && startMile < 50){
+            }
+
+            if (x >= 26 && x < 50){
                 return (this.qty * this.price) + 15;
-            } else if (startMile >= 50){
+            }
+
+            if (x >= 50){
                 return (this.qty * this.price) + 20;
             }
         }
