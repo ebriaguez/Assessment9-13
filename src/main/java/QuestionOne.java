@@ -1,3 +1,5 @@
+import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
+
 public class QuestionOne {
     /*
 
@@ -36,6 +38,10 @@ Total: $35.0
     public static void main(String[] args) {
         QuestionOneReturn productOne = new QuestionOneReturn("Rice", 20, 5.0, 10);
         System.out.println(productOne.information());
-        System.out.println(productOne.totalPrice());
+        System.out.println("Total: $" + productOne.totalPrice());
+
+        QuestionOneReturn productTwo = new QuestionOneReturn("Beans", 10, 2.0, 30);
+        System.out.println(productTwo.information());
+        System.out.println("Total: $" + productTwo.totalPrice());
     }
 }
