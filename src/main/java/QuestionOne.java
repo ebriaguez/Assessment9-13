@@ -36,12 +36,17 @@ Total: $35.0
  */
 
     public static void main(String[] args) {
+        String totalMessage = "Total: $";
         QuestionOneReturn productOne = new QuestionOneReturn("Rice", 20, 5.0, 10);
         System.out.println(productOne.information());
-        System.out.println("Total: $" + productOne.totalPrice());
+        System.out.println(totalMessage + productOne.totalPrice());
 
         QuestionOneReturn productTwo = new QuestionOneReturn("Beans", 10, 2.0, 30);
         System.out.println(productTwo.information());
-        System.out.println("Total: $" + productTwo.totalPrice());
+        System.out.println(totalMessage + productTwo.totalPrice());
+
+        QuestionOneReturn productThree = new QuestionOneReturn("Chicken", 5, 3.5, 45);
+        System.out.println(productThree.information());
+        System.out.println(totalMessage + productThree.totalPrice());
     }
 }
