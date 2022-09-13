@@ -36,5 +36,6 @@ Total: $35.0
     public static void main(String[] args) {
         QuestionOneReturn productOne = new QuestionOneReturn("Rice", 20, 5.0, 10);
         System.out.println(productOne.information());
+        System.out.println(productOne.totalPrice());
     }
 }
