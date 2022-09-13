@@ -34,13 +34,7 @@ Total: $35.0
  */
 
     public static void main(String[] args) {
-        //declaring my variables
-        String product;
-        int qty;
-        double price;
-        int miles;
-        double total;
-
-
+        QuestionOneReturn productOne = new QuestionOneReturn("Rice", 20, 5.0, 10);
+        System.out.println(productOne.information());
     }
 }
